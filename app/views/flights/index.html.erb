@@ -1,11 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Flights</h1>
+<p>THE FASTEST WAY TO YOUR <i class='colored-txt'>NEXT FLIGHT</i></p>
+
+<%= render 'form', flights: @flights %>
 
 <div id="flights">
-  <% @flights.each do |flight| %>
+  <% @available_flights.each do |flight| %>
     <%= render flight %>
     <p>
+      <%= link_to "Select this flight", new_booking_path(id: flight.id) %>
       <%= link_to "Show this flight", flight %>
     </p>
   <% end %>
