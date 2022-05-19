@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-05-19
+  duration: 2022-05-19 18:40:58
+  depature_airport_id: 1
+  arrival_airport_id: 1
+
+two:
+  date: 2022-05-19
+  duration: 2022-05-19 18:40:58
+  depature_airport_id: 1
+  arrival_airport_id: 1
