@@ -1,0 +1,119 @@
+.landing{
+  background-image: url(cloudy.png);
+  background-size:cover;
+  background-position: 0% 100%;
+  height: calc(100vh - 150px);
+  width: 100%;
+  padding: 0px 80px;
+  padding-top: 150px;
+  letter-spacing: 1px;
+}
+
+.motto{
+  font-size: 65px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.motto i{
+  font-style: normal;
+  color: var(--focus-color);
+}
+
+.landing form{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, fit-content(100%));
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.landing form label{
+  font-weight: bold;
+  font-size: 26px;
+  grid-area: label;
+}
+
+.landing form select{
+  grid-area: select;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  width: fit-content;
+  padding-right: 5px;
+  
+}
+
+.landing form input[type='submit']{
+  background: linear-gradient(319deg, rgba(158,156,92,1) 0%, rgba(232,224,30,1) 100%);
+  border: none;
+  width: 120px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.landing form input[type='submit']:hover{
+  background: rgba(232,224,30,1);
+}
+
+.landing form i{
+  grid-area: icon;
+  align-self: center;
+  font-size: 30px;
+  width: fit-content;
+}
+
+.landing form .search-input{
+  display: grid;
+  grid-template-areas: 'icon label'
+                       'icon select';
+  column-gap: 10px;
+}
+
+.flights{
+  color: black;
+  padding: 160px 80px;
+}
+
+.flights h2{
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+.flights a{
+  text-decoration: none;
+}
+
+.flights a:hover{
+  transform: scale(1.1);
+  border-radius: 8px;
+  box-shadow:  1px 1px 20px 12px rgba(0, 0, 0, 0.459);
+}
+
+.subheader-date{
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flights-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 600px);
+  gap: 50px;
+  justify-content: center;
+
+}
+
+.flights .colored-txt{
+  color: #356CB1;
+}
+
+.placeholder{
+  height: 250px;
+}

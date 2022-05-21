@@ -8,12 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/5ed27ce724.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
 
   <body>
   <nav>
-  <h1>Fast Flight</h1>
+  <h1>Fast Flight<i class="fas fa-plane"></i></h1>
   </nav>
     <%= yield %>
+  <footer><p>Made by <a href="https://github.com/LucaBla"><strong>Luca Blazevic</strong><i class="fab fa-github"></i></a></p></footer>
   </body>
 </html>

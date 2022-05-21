@@ -1,22 +1,38 @@
-<div id="<%= dom_id flight %>">
-  <p>
-    <strong>Date:</strong>
-    <%= flight.date %>
-  </p>
+<div id="<%= dom_id flight %>" class="flight">
+  <div class="title-wrapper">
+    <h3>Airline Ticket</h3>
+  </div>
 
-  <p>
-    <strong>Duration:</strong>
-    <%= flight.duration %>
-  </p>
+  <div class="flight-details">
+    <div class="details-wrapper">
+      <p class="label">Flight</p>
+      <p class="detail"><%= flight.flight_code %></p>
+    </div>
 
-  <p>
-    <strong>Depature airport:</strong>
-    <%= flight.depature_airport.code %>
-  </p>
+    <div class="details-wrapper">
+      <p class="label">Date</p>
+      <p class="detail"><%= flight.date %></p>
+    </div>
 
-  <p>
-    <strong>Arrival airport:</strong>
-    <%= flight.arrival_airport.code %>
-  </p>
+    <div class="details-wrapper">
+      <p class="label">From</p>
+      <p class="detail"><%= flight.depature_airport.code %></p>
+    </div>
 
+    <div class="details-wrapper">
+      <p class="label">To</p>
+      <p class="detail"><%= flight.arrival_airport.code %></p>
+    </div>
+
+    <div class="details-wrapper">
+      <p class="label">Time</p>
+      <p class="detail"><%= flight.time %></p>
+    </div>
+
+    <div class="details-wrapper">
+      <p class="label">Duration</p>
+      <p class="detail"><%= flight.duration %></p>
+    </div>
+  </div>
+  <div class="flight-footer"></div>
 </div>

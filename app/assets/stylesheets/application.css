@@ -13,3 +13,67 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  --focus-color: #E8E01E;
+
+  font-family: 'Inter' ,Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  color: white;
+  padding: 0px 0px;
+  margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
+ }
+ nav{
+   margin-left: 0px;
+   font-weight: bold;
+   font-size: 20px;
+   background-color: transparent;
+   position: fixed;
+   padding: 20px 80px;
+   top: 0px;
+ }
+
+ footer{
+   display: flex;
+   background-image: url(cloudy-footer.png);
+   height: 500px;
+   text-align: center;
+   align-items: flex-end;
+   justify-content: center;
+ }
+
+ footer p{
+   margin-bottom: 50px;
+   font-size: 20px;
+ }
+
+ footer a{
+   color: white;
+   text-decoration: none;
+ }
+
+ footer a i{
+   margin-left: 10px;
+   font-size: 26px;
+ }
+
+ nav h1{
+   margin-top: 0px;
+   margin-bottom: 0px;
+ }
+
+ nav h1 i{
+   margin-left: 10px;
+   font-size: 25px;
+ }
+
+ p{
+   margin: 0px;
+ }
+
+ .colored-txt{
+  font-style: normal;
+  color: var(--focus-color);
+ }

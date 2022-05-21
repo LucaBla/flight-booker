@@ -6,8 +6,16 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-airports = Airport.create([{ code: 'NYC' }, { code: 'FRA' }, { code: 'AMS' },
-                           { code: 'LAX' }, { code: 'CAN' }, { code: 'DXB' }])
+Airport.create(code: 'NYC')
+Airport.create(code: 'FRA')
+Airport.create(code: 'AMS')
+Airport.create(code: 'LAX')
+Airport.create(code: 'CAN')
+Airport.create(code: 'DXB')
 
-flights = Flight.create([{date: Date.today, depature_airport_id: 1, arrival_airport_id: 5, flight_code: 'Coolman'},
-                         {date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'Coolman2'}])
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 5, flight_code: 'FF2521', time: '17:20', duration: '2:00')
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'AD2428', time: '17:20', duration: '3:30')
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'CC2442', time: '17:20', duration: '5:00')
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'WO9872', time: '17:20', duration: '2:20')
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'BB1111', time: '8:30', duration: '2:00')
+Flight.create(date: Date.today, depature_airport_id: 1, arrival_airport_id: 2, flight_code: 'AA4444', time: '7:30', duration: '2:00')

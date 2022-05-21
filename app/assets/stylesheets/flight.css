@@ -1,0 +1,45 @@
+.flight{
+  box-shadow:  1px 1px 5px 2px rgba(0, 0, 0, 0.459);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 600px;
+  min-width: 500px;
+}
+
+.flight .title-wrapper{
+  background-color: #09192b;
+  margin-top: 0px;
+  padding: 20px 20px;
+  color: white;
+}
+
+.flight h3{
+  font-size: 22px;
+  margin: 0px;
+}
+
+.flight-details{
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  column-gap: 30%;
+  row-gap: 15px;
+  padding: 20px 20px;
+  background-image: linear-gradient(to right, rgba(14, 41, 71, 0.7), rgba(14, 42, 71, 0.7)), url(worldmap.png);
+  background-size: cover;
+}
+
+.flight .label{
+  color: #adadad;
+}
+
+.flight .detail{
+  font-size: 20px;
+  color: white;
+}
+
+.flight-footer{
+  background-color: #09192b;
+  height: 20px;
+  width: 100%;
+  margin: 0px;
+}

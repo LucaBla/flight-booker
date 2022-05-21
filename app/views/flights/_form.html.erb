@@ -1,21 +1,30 @@
 <%= form_with(url: '/flights', method: "get") do |form| %>
 
-  <div>
-    <%= form.label :depature_airport_id, style: "display: block" %>
-    <%= form.select(:depature_airport_id, @airports) %>
+  <div class="depature search-input">
+    <i class="fas fa-plane-departure"></i>
+    <%= form.label :depature_airport_id, 'Origin', style: "display: block" %>
+    <%= form.select(:depature_airport_id, @airports, selected: params[:depature_airport_id]) %>
   </div>
 
-  <div>
-    <%= form.label :arrival_airport_id, style: "display: block" %>
-    <%= form.select :arrival_airport_id, @airports %>
+  <div class="arrival search-input">
+    <i class="fas fa-plane-arrival"></i>
+    <%= form.label :arrival_airport_id, 'Destination', style: "display: block" %>
+    <%= form.select :arrival_airport_id, @airports, selected: params[:arrival_airport_id] %>
   </div>
 
-  <div>
+  <div class="date search-input">
+    <i class="fas fa-calendar"></i>
     <%= form.label :date, style: "display: block" %>
-    <%= form.select(:date, @date_options) %>
+    <%= form.select(:date, @date_options, selected: params[:date]) %>
+  </div>
+
+  <div class="passengers search-input">
+    <i class="fas fa-users"></i>
+    <%= form.label :passengers, style: "display: block" %>
+    <%= form.select(:passengers, options_for_select(1..4, selected: params[:passengers])) %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit 'Search'%>
   </div>
 <% end %>
