@@ -17,22 +17,24 @@
   </div>
 
   <div>
-  <% params[:passengers].to_i.times do %>
-    <%= form.fields_for :passengers do | sub_form |%>
-      <div>
-        <%= sub_form.label :name %>
-        <%= sub_form.text_field :name %>
-      </div>
-      <div>
-        <%= sub_form.label :email %>
-        <%= sub_form.text_field :email %>
-      </div>
-    <% end %>
-    <br>
+  <% params[:passengers].to_i.times do |p| %>
+    <div class="passenger-subform">
+      <h4>Passenger <%= p +1 %></h4>
+      <%= form.fields_for :passengers do | sub_form |%>
+        <div class='field'>
+          <%= sub_form.label :name %>
+          <%= sub_form.text_field :name %>
+        </div>
+        <div class='field'>
+          <%= sub_form.label :email %>
+          <%= sub_form.text_field :email %>
+        </div>
+      <% end %>
+    </div>
   <% end %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class='button-div'>
+    <%= form.submit 'Submit' %>
   </div>
 <% end %>

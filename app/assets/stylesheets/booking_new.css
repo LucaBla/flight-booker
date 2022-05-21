@@ -1,0 +1,103 @@
+.booking-new-content{
+  color: black;
+  padding: 160px 80px;
+}
+
+.booking-new-content h2{
+  margin-bottom: 0px;
+  font-size: 40px;
+  text-align: center;
+  color: #356CB1;
+}
+
+.booking{
+  display: grid;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 50px;
+}
+
+.selected-flight{
+  display: grid;
+  grid-template-areas: 'header .'
+                       'flight passenger-number';
+  align-items: center;
+  column-gap: 30px;
+}
+
+.booking h3{
+  grid-area: header;
+  font-size: 30px;
+}
+
+.selected-flight .flight{
+  grid-area: flight;
+}
+
+.selected-flight .passenger-number{
+  font-size: 50px;
+  font-weight: bold;
+  grid-area: passenger-number;
+}
+
+.booking .passengers-form{
+  margin-top: 0px;
+  
+}
+
+.passenger-subform{
+  font-size: 20px;
+  background-color: #e0e0e0;
+  padding: 30px 80px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow:  1px 1px 5px 2px rgba(0, 0, 0, 0.459);
+}
+
+.passenger-subform h4{
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.passenger-subform label{
+  margin-bottom: 5px;
+}
+
+.passenger-subform input{
+  border: transparent;
+  height: 30px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.button-div{
+  display: flex;
+  justify-content: center;
+}
+
+.passengers-form form input[type='submit']{
+  background: linear-gradient(319deg, rgba(158,156,92,1) 0%, rgba(232,224,30,1) 100%);
+  border: none;
+  width: 140px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.passengers-form form input[type='submit']:hover{
+  background: rgba(158,156,92,1);
+  cursor: pointer;
+}

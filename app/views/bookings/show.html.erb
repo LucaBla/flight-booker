@@ -1,7 +1,13 @@
-<p style="color: green"><%= notice %></p>
+<div class="show-booking-content">
+  <p style="color: green"><%= notice %></p>
+  <h2>Your Order</h2>
+  <div class="ticket-grid">
+    <% @booking.passengers.each do | p |%>
+      <%= render @booking.flight, passenger: p%>
+    <% end %>
+  </div>
 
-<%= render @booking %>
-
-<div>
-  <%= link_to "Back to flights", flights_path %>
+  <div>
+    <%= button_to "Book another flight", flights_path, method: :get %>
+  </div>
 </div>

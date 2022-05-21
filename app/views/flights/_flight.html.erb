@@ -1,6 +1,9 @@
 <div id="<%= dom_id flight %>" class="flight">
   <div class="title-wrapper">
     <h3>Airline Ticket</h3>
+    <% if request.path.include?('/bookings/') && !request.path.include?('/bookings/new')%>
+      <p class='ticket-passenger-name'><%= passenger.name %></p>
+    <% end %>
   </div>
 
   <div class="flight-details">

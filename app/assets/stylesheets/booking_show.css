@@ -1,0 +1,40 @@
+.show-booking-content{
+  color: black;
+  padding: 160px 80px;
+}
+
+.show-booking-content h2{
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: #356CB1;
+}
+
+.ticket-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 600px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.show-booking-content form{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.show-booking-content button{
+  background: linear-gradient(319deg, rgba(158,156,92,1) 0%, rgba(232,224,30,1) 100%);
+  border: none;
+  width: 220px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.show-booking-content button:hover{
+  background: rgba(158,156,92,1);
+  cursor: pointer;
+}

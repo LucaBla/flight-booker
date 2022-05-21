@@ -41,8 +41,17 @@
   color: white;
   font-size: 22px;
   width: fit-content;
-  padding-right: 5px;
-  
+  padding-right: 5px; 
+}
+
+.landing form select:focus{
+  outline: none;
+}
+
+.landing form option{
+  background: #25467d;
+  border: none;
+  outline: none;
 }
 
 .landing form input[type='submit']{
@@ -58,7 +67,8 @@
 }
 
 .landing form input[type='submit']:hover{
-  background: rgba(232,224,30,1);
+  background: rgba(158,156,92,1);
+  cursor: pointer;
 }
 
 .landing form i{
@@ -77,12 +87,13 @@
 
 .flights{
   color: black;
-  padding: 160px 80px;
+  padding: 100px 80px;
 }
 
 .flights h2{
   margin-bottom: 0px;
   font-size: 40px;
+  text-align: center;
 }
 
 .flights a{
@@ -100,12 +111,13 @@
   margin-bottom: 50px;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .flights-grid{
   display: grid;
   grid-template-columns: repeat( auto-fit, 600px);
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 
 }

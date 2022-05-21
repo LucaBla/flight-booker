@@ -25,14 +25,25 @@
   width: 100vw;
   overflow-x: hidden;
  }
- nav{
+ .root-nav{
    margin-left: 0px;
    font-weight: bold;
    font-size: 20px;
    background-color: transparent;
-   position: fixed;
+   position: absolute;
    padding: 20px 80px;
    top: 0px;
+ }
+
+ .other-nav{
+  margin-left: 0px;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 20px 80px;
+   top: 0px;
+  background-image: url(cloudy-header.png);
+  background-size: cover;
+  height: 500px;
  }
 
  footer{
