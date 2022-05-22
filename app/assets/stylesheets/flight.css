@@ -27,6 +27,8 @@
 .flight-details{
   display: grid;
   grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-auto-flow: column;
   column-gap: 30%;
   row-gap: 15px;
   padding: 20px 20px;
@@ -41,6 +43,10 @@
 .flight .detail{
   font-size: 20px;
   color: white;
+}
+
+.price-wrapper{
+  margin-right: 0px;
 }
 
 .flight-footer{

@@ -1,6 +1,6 @@
 <%= form_with(model: @booking) do |form| %>
   <% if @booking.errors.any? %>
-    <div style="color: red">
+    <div style="color: red" class="errors">
       <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
 
       <ul>
@@ -12,12 +12,13 @@
   <% end %>
 
   <div>
-    <%= form.hidden_field :flight_id, value: params[:id] %>
-    <%= form.hidden_field :date, value: Date.today %>
+    <%= form.hidden_field :flight_id %>
+    <%= form.hidden_field :date %>
+    <%= form.hidden_field :passengers_num, value: @passengers_num %>
   </div>
 
   <div>
-  <% params[:passengers].to_i.times do |p| %>
+  <% @passengers_num.to_i.times do |p| %>
     <div class="passenger-subform">
       <h4>Passenger <%= p +1 %></h4>
       <%= form.fields_for :passengers do | sub_form |%>

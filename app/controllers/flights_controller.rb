@@ -5,7 +5,7 @@ class FlightsController < ApplicationController
   def index
     #@selected_date = Date.civil(params[:year].to_i, params[:month].to_i, params[:day].to_i)
     @flights = Flight.all
-    @date_options = @flights.map{ |f| [ f.date, f.date ] }.uniq
+    @date_options = @flights.map{ |f| [ f.date.to_fs(:rfc822), f.date ] }.uniq
     @airports = Airport.all.map { |a| [a.code, a.id]}
 
     @available_flights = Flight.where(depature_airport_id: params[:depature_airport_id],

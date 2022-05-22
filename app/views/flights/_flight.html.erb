@@ -14,7 +14,7 @@
 
     <div class="details-wrapper">
       <p class="label">Date</p>
-      <p class="detail"><%= flight.date %></p>
+      <p class="detail"><%= flight.date.strftime('%d.%m.%y') %></p>
     </div>
 
     <div class="details-wrapper">
@@ -35,6 +35,13 @@
     <div class="details-wrapper">
       <p class="label">Duration</p>
       <p class="detail"><%= flight.duration %></p>
+    </div>
+
+    <div></div>
+
+    <div class="details-wrapper price-wrapper">
+      <p class="label">Price</p>
+      <p class="detail"><%= flight.price %>$</p>
     </div>
   </div>
   <div class="flight-footer"></div>

@@ -37,6 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_20_212617) do
     t.date "date"
     t.string "duration"
     t.string "time"
+    t.float "price"
     t.integer "depature_airport_id"
     t.integer "arrival_airport_id"
     t.datetime "created_at", null: false

@@ -49,7 +49,8 @@
 
 .passenger-subform{
   font-size: 20px;
-  background-color: #e0e0e0;
+  background-color: #09192b;
+  color: white;
   padding: 30px 80px;
   margin-bottom: 30px;
   border-radius: 8px;
@@ -80,6 +81,14 @@
   margin-bottom: 20px;
 }
 
+.field_with_errors{
+  width: 100%;
+}
+
+.field_with_errors input{
+  width: 100%;
+}
+
 .button-div{
   display: flex;
   justify-content: center;
@@ -100,4 +109,14 @@
 .passengers-form form input[type='submit']:hover{
   background: rgba(158,156,92,1);
   cursor: pointer;
+}
+
+.errors h2{
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.errors ul{
+  margin-top: 0px;
 }

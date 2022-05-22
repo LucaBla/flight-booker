@@ -98,10 +98,11 @@
 
 .flights a{
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 
 .flights a:hover{
-  transform: scale(1.1);
+  transform: scale(1.07);
   border-radius: 8px;
   box-shadow:  1px 1px 20px 12px rgba(0, 0, 0, 0.459);
 }

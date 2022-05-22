@@ -14,7 +14,9 @@
 
   <body>
   <nav class=<%= 'root-nav' if request.path == '/' || request.path == '/flights' %> <%= 'other-nav' if request.path != '/' || request.path != '/flights' %>>
-    <h1>Fast Flight<i class="fas fa-plane"></i></h1>
+    <%= link_to root_path do%>
+      <h1>Fast Flight<i class="fas fa-plane"></i></h1>
+    <% end %>
   </nav>
   <%= yield %>
   <footer><p>Made by <a href="https://github.com/LucaBla"><strong>Luca Blazevic</strong><i class="fab fa-github"></i></a></p></footer>

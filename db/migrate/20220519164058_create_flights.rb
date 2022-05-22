@@ -4,6 +4,7 @@ class CreateFlights < ActiveRecord::Migration[7.0]
       t.date :date
       t.string :duration
       t.string :time
+      t.float :price
       t.integer :depature_airport_id
       t.integer :arrival_airport_id
 

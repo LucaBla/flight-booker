@@ -25,6 +25,12 @@
   width: 100vw;
   overflow-x: hidden;
  }
+
+ nav a{
+   text-decoration: none;
+   color: white;
+ }
+
  .root-nav{
    margin-left: 0px;
    font-weight: bold;

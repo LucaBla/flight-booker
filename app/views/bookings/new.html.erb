@@ -3,7 +3,7 @@
   <div class="booking">
     <div class="selected-flight">
       <h3>Flight</h3>
-      <%= render Flight.where(id: params[:id]) %> <p class="passenger-number">x <%= params[:passengers] %></p> 
+      <%= render @flight %> <p class="passenger-number">x <%= @passengers_num %></p> 
     </div>
     <div class="passengers-form">
       <h3>Passengers</h3>
