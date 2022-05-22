@@ -4,6 +4,11 @@
     <p class='motto'>THE FASTEST WAY<br>TO YOUR <i class='colored-txt'>NEXT FLIGHT.</i></p>
     <%= render 'form', flights: @flights %>
   </div>
+  <div class="arrows <%='invisible' if !params.has_key?(:depature_airport_id) %>">
+    <i class="fas fa-arrow-down left-arrow"></i>
+    <i class="fas fa-arrow-down"></i>
+    <i class="fas fa-arrow-down right-arrow"></i>
+  </div>
 </div>
   <div class="flights">
     <% if !@available_flights.empty?  %>
