@@ -22,9 +22,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_24_221616) do
 
   create_table "bookings", force: :cascade do |t|
     t.date "date"
-    t.boolean "paid", default: false
-    t.string "token"
-    t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "passenger_id"
@@ -51,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_24_221616) do
   create_table "orders", force: :cascade do |t|
     t.boolean "paid", default: false
     t.string "token"
-    t.integer "price"
+    t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
