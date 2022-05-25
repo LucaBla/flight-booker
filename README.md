@@ -10,6 +10,6 @@ note: it takes about 30 seconds for heroku to load the webapp.
 
 ## Screenshots
 <img src='preview_imgs/ev1.png'>
-<img src='preview_imgs/ev2.png'>
+<img src='preview_imgs/evc2.png'>
 <img src='preview_imgs/ev3.png'>
 <img src='preview_imgs/ev4.png'>
