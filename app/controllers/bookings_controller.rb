@@ -1,5 +1,7 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: %i[ show edit update destroy ]
+  before_action :paypal_init, only: %i[ create_booking_paypal capture_booking ]
+  skip_before_action :verify_authenticity_token
 
   def show
   end
@@ -42,4 +44,5 @@ class BookingsController < ApplicationController
   def unimportant_params
     params.require(:booking).permit(:passengers_num)
   end
+
 end
