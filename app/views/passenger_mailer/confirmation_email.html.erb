@@ -9,13 +9,13 @@
       You have successfully booked a flight with Fast Flight,
       your Flight Details:<br>
       <ul>
-        <li>Date: <%= Booking.flight.date %></li>
-        <li>Time: <%= Booking.flight.time %></li>
-        <li>Duration: <%= Booking.flight.duration %></li>
+        <li>Date: <%= @booking.flight.date %></li>
+        <li>Time: <%= @booking.flight.time %></li>
+        <li>Duration: <%= @booking.flight.duration %></li>
       </ul>
     </p>
     <p>
-      To revisit the site, just follow this link: <a href="@url"><%= @url %></a>.
+      To revisit the site, just follow this link: <a href="<%=@url%>"><%= @url %></a>.
     </p>
     <p>Thanks for trusting us and have a great day!</p>
   </body>

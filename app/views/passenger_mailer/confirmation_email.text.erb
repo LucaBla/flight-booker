@@ -2,9 +2,9 @@ Welcome to Fast Flight, <%= @booking.passengers.first.name %>
 ============================================
 You have successfully booked a flight with Fast Flight,
 your Flight Details: 
-  Date: <%= Booking.flight.date %>
-  Time: <%= Booking.flight.time %>
-  Duration: <%= Booking.flight.duration %>
+  Date: <%= @booking.flight.date %>
+  Time: <%= @booking.flight.time %>
+  Duration: <%= @booking.flight.duration %>
 
 
 To revisit the site, just follow this link: <%= @url %>.
