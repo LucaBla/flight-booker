@@ -1,24 +1,18 @@
-# README
+# Fast Flight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+A project to dive into nested forms.<br/>
+The project is a webapp which acts as a flight booker.
 
-Things you may want to cover:
+## Demo
+Try it [here.](https://whispering-tundra-36418.herokuapp.com/flights) <br/>
+note: it takes about 30 seconds for heroku to load the webapp.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Screenshots
+<img src='preview_imgs/ev1.png'>
+<hr>
+<img src='preview_imgs/evc2.png'>
+<hr>
+<img src='preview_imgs/ev3.png'>
+<hr>
+<img src='preview_imgs/ev4.png'>

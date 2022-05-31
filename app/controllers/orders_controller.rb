@@ -53,11 +53,4 @@ class OrdersController < ApplicationController
 
   private
 
-  def paypal_init
-    client_id = 'AWW8BOdjGkv5jFmSwY7s_M2oNhoI_6fQfFNqpXjm13DM9IifyxSNsbWHTTDM8vKqUMuYY_jnD9cbekPp'
-    client_secret = 'EBMC50zoVI3ZX8nA-Y5Sae4X_ougcUg5VIydc0RqcqZZd4KGWAeCfssDR10gQjtsPoomloblChoX9Up1'
-
-    environment = PayPal::SandboxEnvironment.new client_id, client_secret
-    @client = PayPal::PayPalHttpClient.new environment
-  end
 end
